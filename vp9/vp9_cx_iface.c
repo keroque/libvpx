@@ -547,7 +547,7 @@ static vpx_codec_err_t set_encoder_config(
   } else if (oxcf->ts_number_layers == 1) {
     oxcf->ts_rate_decimator[0] = 1;
   }
-  /*
+  
   printf("Current VP9 Settings: \n");
   printf("target_bandwidth: %d\n", oxcf->target_bandwidth);
   printf("target_level: %d\n", oxcf->target_level);
@@ -579,7 +579,7 @@ static vpx_codec_err_t set_encoder_config(
   printf("error resilient: %d\n", oxcf->error_resilient_mode);
   printf("frame parallel detokenization: %d\n",
          oxcf->frame_parallel_decoding_mode);
-  */
+  
   return VPX_CODEC_OK;
 }
 
